@@ -8,7 +8,7 @@ namespace ProjectDeadline {
         public override void ConstructOptionsScreen(RectTransform parent, bool inGame) {
             if (inGame) {
                 var label = WindowManager.SpawnLabel();
-                label.text = "ProjectDeadline v" + Version + " was created by Sergei Biriukov. GitHub @ https://github.com/Evedel/ProjectDeadline";
+                label.text = "ProjectDeadline v" + Version + " was created by Evedel. https://github.com/Evedel/SoftwareInc-ProjectDeadline";
                 WindowManager.AddElementToElement(label.gameObject, parent.gameObject, new Rect(0, 0, 400, 75),
                     new Rect(0, 0, 0, 0));
             }

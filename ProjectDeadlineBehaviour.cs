@@ -30,7 +30,7 @@ namespace ProjectDeadline {
         }
 
         public override void OnDeactivate() {
-            ProjectDeadlineMod.ModActive = true;
+            ProjectDeadlineMod.ModActive = false;
         }
 
         private void Start() {
