@@ -620,7 +620,8 @@ namespace Olecons {
 
                             string response = streamReader.ReadToEnd();
                             string[] parts = response.Split(new string[] { "\r\n" }, StringSplitOptions.None);
-                            callback?.Invoke(parts.Length > 4 ? parts[parts.Length-4] : null); // Invoke the callback with the response body
+                            // DevConsole.Console.Log(parts[parts.Length-1]);
+                            callback?.Invoke(parts.Length > 1 ? parts[parts.Length-1] : null); // Invoke the callback with the response body
                         }
                     }
                 }
